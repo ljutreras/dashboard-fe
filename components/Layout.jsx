@@ -42,12 +42,7 @@ const Layout = ({ children }) => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(login)
-        }).then((response) => response.json())
-            .catch((error) => {
-                console.error("Error:", error)
-                alert('invalid login')
-            })
-            .then((response) => {
+        }).then((response) => {
                 if (response) {
                     setDataLogin(response)
                     localStorage.setItem('firstName', response.firstName)
