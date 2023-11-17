@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
     })
 
     const handleSignUp = async (signUp) => {
-        fetch(`http://localhost:3001/user/create`, {
+        fetch(`https://be-dashboard-lq0q.onrender.com/user/create`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
     }
 
     const handleLogin = async (login) => {
-        fetch(`http://localhost:3001/user/`, {
+        fetch(`https://be-dashboard-lq0q.onrender.com/user/`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

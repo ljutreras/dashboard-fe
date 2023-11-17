@@ -16,7 +16,7 @@ export default function Home({ allUsers }) {
 
 export async function getServerSideProps() {
 
-  const res = await fetch(`http://localhost:3001/user/all`)
+  const res = await fetch(`https://be-dashboard-lq0q.onrender.com/user/all`)
   const allUsers = await res.json()
   return { props: { allUsers } }
 
